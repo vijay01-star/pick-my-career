@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILS</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the login box */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .login-box {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-heading {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+
+        .btn-login {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-login:hover {
+            background-color: #0056b3;
+        }
+
+        .link {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #007bff;
+        }
+        a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 login-box">
+                <form action="http://localhost:5000/sign_up" method="POST">
+                <h2 class="login-heading">FOR MORE DETAILS</h2>
+                <input type="email" class="form-control" name="email" placeholder="Enter Email Here">
+                <input type="password" class="form-control" name="password" placeholder="Enter Password Here">
+               <center> <button type="submit" class="btn btn-primary"><a href="vedio.html">Submit</a></button></center>
+                <p class="link">Don't have an account? <a href="#">Sign up here</a></p>
+                <center>
+                    <div class=" text-center">
+                        <h3>Follow Us</h3>
+                        <p>Stay connected on social media:</p>
+                        <a href="https://www.facebook.com/medishalaportal" target="_blank">
+                            <i class="fa-brands fa-facebook"></i> Facebook
+                        </a>
+                        <a href="https://www.youtube.com/c/Medishala" target="_blank">
+                            <i class="fa-brands fa-youtube"></i> Youtube
+                        </a>
+                        <a href="https://www.instagram.com/medishalaportal/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://www.linkedin.com/company/medishala/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i> Linkedin
+                        </a>
+                    </div></center>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         body {
+        background-image: url('loginback.jpeg'); /* Specify the path to your background image */
+        background-size: cover; /* Cover the entire viewport */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-attachment: fixed; /* Fixed background image */
+    }
+
+       body {
+            background-color: black;
+        }
+
+        .login-container {
+            margin-top: 100px;
+            border: 15px solid white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .login-heading {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff; /* Blue color for heading */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn-login {
+            background-color: #007bff;
+            color: #fff;
+            border: none; /* Remove border */
+        }
+
+        .btn-login:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the "CLICK TO ENTER" button */
+        .btn-enter {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            width: 100%; /* Make it full width */
+        }
+
+        .btn-enter:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the link */
+        .login-link {
+            text-decoration: none;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Modal styles */
+        .modal-title {
+            color: #007bff; /* Blue color for modal title */
+        }
+
+        /* Close button styles */
+        .close {
+            font-size: 25px;
+            color: #007bff; /* Blue color for close button */
+        }
+         a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 login-container">
+                <h2 class="login-heading">Login</h2>
+                <form action="http://localhost:8000/sign_up" method="post"></form>
+                    <div class="form-group">
+                        <input class="box form-control" type="text" name="name" id="name" placeholder="Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input class="box form-control" type="password" name="password" id="password" placeholder="Password" required />
+                    </div>
+                    <center>
+                        <button type="button" class="btn btn-login" data-toggle="modal" data-target="#myModal">CLICK TO ENTER</button>
+                        <div class="text-center">
+                            <a href="home4.html" class="login-link">Forgot Password?</a>
+                        </div>
+                    </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Login Confirmation</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Are you sure you want to submit this form?
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="submitForm()"><a href="home4.html"><b>Submit</b></a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function submitForm() {
+            // Add your form submission logic here
+            // You can use AJAX to send data to the server or perform other actions
+            // For example, you can use jQuery AJAX to send the form data to the server:
+            // $.ajax({
+            //     type: 'POST',
+            //     url: 'your_server_endpoint',
+            //     data: {
+            //         name: $('#name').val(),
+            //         password: $('#password').val()
+            //     },
+            //     success: function(response) {
+            //         // Handle the response from the server
+            //     }
+            // });
+            $('#myModal').modal('hide'); // Close the modal after form submission
+        }
+    </script>
+</body>
+</html>

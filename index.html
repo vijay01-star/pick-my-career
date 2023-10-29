@@ -1,0 +1,184 @@
+<!--DOCTYPE html>
+<html>
+<head>
+	<title> Signup Form</title>
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">		
+<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<div class="container" >
+		<div class="row">
+		<div class="col-md-3">		
+		</div>	
+		<div class="col-md-6 main">		
+			<form action="http://localhost:3000/sign_up" method="post">		
+			 <h1 class="sign"> Signup form </h1>			
+			 <input class="box" type="text" name="name" id="name" placeholder="Name" required /><br>				
+			 <input class="box" type="email" name="email" id="email" placeholder="E-Mail " required /><br>			
+			<input class="box" type="password" name="password" id="password" placeholder="Password " required/><br>		
+			 <input class="box" type="text" name="phone" id="phone" placeholder="Phone Number " required/><br>
+			 <textarea name="address" id="" class="box"  placeholder="Enter your Address" ></textarea>
+			 <h5>select your gender</h5>
+			 <select name="gender" id="" class="box" placeholder="select your gender">
+				 <option value="male">Male</option>
+				 <option value="Female">Female</option>
+				 <option value="Others">Others</option>
+			</select>
+			<h5>select your scheme</h5>
+			<select name="scheme" id="" class="radio" placeholder="select your scheme">
+				<option value="scholarship scheme">scholarship scheme</option>
+				<option value="Incentive scheme">Incentive scheme</option>
+				<option value="Others">Others</option>
+		   </select>
+		   <h5>select your country</h5>
+		   <select name="country" id="" class="radio" placeholder="select your country">
+			<option value="India">India</option>
+			<option value="UK">Uk</option>
+			<option value="USA">USA</option>
+			<option value="Others">Others</option>
+	   </select>
+	   <h5>select your scholarship Option</h5>
+	   <select name="option" id="" class="radio" placeholder="select your scholarship Option">
+		<option value="post">post</option>
+		<option value="pre">pre</option>
+		<option value="Others">Others</option>
+   </select>
+   <h5>Fill the bank Details</h5>
+   <input class="box" type="text" name="ifsc" id="ifsc" placeholder="IFSC CODE " required/><br>
+   <input class="box" type="text" name="account" id="account" placeholder="enter account number " required/><br>
+   <input class="box" type="text" name="bname" id="bname" placeholder="Enter bankName" required /><br>	
+
+
+				<input type="submit" id="submitDetails" name="submitDetails" value="Submit" /><br>	
+			</form>		
+		</div>
+		<div class="col-md-3">
+		</div>	
+	</div>
+	</div>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Add custom CSS styles here */
+
+        /* Style the form container */
+        .container {
+            background-color:greenyellow;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the form header */
+        .sign {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Style form inputs */
+        .box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the select boxes */
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the submit button */
+        #submitDetails {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        #submitDetails:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 main">
+                <form action="http://localhost:3000/sign_up" method="post">
+                    <h1 class="sign">Signup Form</h1>
+                    <input class="box" type="text" name="name" id="name" placeholder="Name" required /><br>
+                    <input class="box" type="email" name="email" id="email" placeholder="E-Mail" required /><br>
+                    <input class="box" type="password" name="password" id="password" placeholder="Password" required /><br>
+                    <input class="box" type="text" name="phone" id="phone" placeholder="Phone Number" required /><br>
+                    <textarea name="address" id="" class="box" placeholder="Enter your Address"></textarea>
+                    <h5>Select your gender</h5>
+                    <select name="gender" class="box">
+                        <option value="male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <h5>Select your scheme</h5>
+                    <select name="scheme" class="box">
+                        <option value="scholarship scheme">Scholarship scheme</option>
+                        <option value="Incentive scheme">Incentive scheme</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <h5>Select your country</h5>
+                    <select name="country" class="box">
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="USA">USA</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <h5>Select your scholarship Option</h5>
+                    <select name="option" class="box">
+                        <option value="post">Post</option>
+                        <option value="pre">Pre</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <h5>Fill the bank Details</h5>
+                    <input class="box" type="text" name="ifsc" id="ifsc" placeholder="IFSC CODE" required /><br>
+                    <input class="box" type="text" name="account" id="account" placeholder="Enter account number" required /><br>
+                    <input class="box" type="text" name="bname" id="bname" placeholder="Enter bankName" required /><br>
+                    <input type="submit" id="submitDetails" name="submitDetails" value="Submit" /><br>
+                </form>
+            </div>
+            <div class="col-md-3">
+            </div>
+            
+        </div>
+        <center>
+            <button type="submit"><a href="home4.html">BACK TO HOME</a></button>
+        </center>
+    </div>
+   
+</body>
+</html>
+
